@@ -4,8 +4,262 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Himitsu</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="style.css">
+
+
+	<script>
+		$(document).ready(function () {
+		  $(".navbar-nav li a").click(function(event) {
+			$(".navbar-collapse").collapse('hide');
+		  });
+		});
+	</script>
 </head>
 <body>
+	<header>
+		<nav class="navbar container-fluid navbar-expand-lg navbar-light bg-light">
+			<div class="row mx-auto">
+				<ul class="nav col-12 justify-content-center">
+					<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+				  </ul>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="col-12 pt-3 text-uppercase collapse justify-content-center navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav justify-content-center">
+					  <li class="nav-item pl-5 pr-5 active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					  </li>
+					  <li class="nav-item pl-5 pr-5">
+						<a class="nav-link" href="#">Industry Focus</a>
+					  </li>
+					  <li class="nav-item pl-5 pr-5">
+						<a class="nav-link" href="#">Trace & Track</a>
+					  </li>
+					  <li class="nav-item pl-5 pr-5">
+						<a class="nav-link" href="#">About Us</a>
+					  </li>
+					  <li class="nav-item pl-5 pr-5">
+						<a class="nav-link" href="#">Building Future Solutions</a>
+					  </li>
+					  <li class="nav-item pl-5 pr-5">
+						<a class="nav-link" href="#">Contact Us</a>
+					  </li>
+				  </div>
+			</div>
+		  </nav>
+	</header>
 
+	<section class="container-fluid herobg whitten" style="position: relative;">
+		<div class="container">
+			<div class="row mx-auto justify-content-center">
+				<div class="col-12 textoverlay  mx-auto">
+					<div class="text-center h2">
+						We incubate and nurture
+					</div>
+					<div class="h2 text-center">
+						Ideas that push the human race forward.
+					</div>
+					<div class="font-weight-light text-center pt-2">
+						We find, nurture and co-build technology solutions that make our world a better place for all of us.
+					</div>
+					<div class="mx-auto text-center pt-5">
+						<div class="btn btn-warning text-uppercase">
+							Apply For Incubation
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="jumbotron bg-primary">
+			<div class="row">
+				<div class="col-12 h2 text-center">
+					<div class="font-weight-light pt-5">
+						Industry Focus
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid pt-5 mt-5 pb-5">
+				<div class="row justify-content-center">
+					<div class="col-md-3" >
+						<div data-aos="fade-up" class="card" style="background-color: transparent !important;">
+							<img class="card-img-top mx-auto img-fluid" style="max-width: 152px; max-height: 270px;" src="img/himitsulab_homepage_supplychain_324x324.png" alt="Card image cap">
+							<div class="card-body text-center">
+							<div class="text-nowrap">Supply-Chain traceability</div>
+							<div class="text-center pt-4"><a href="aboutus.html#overview" class="btn btn-outline-primary text-nowrap">+ ReadMore</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div data-aos="fade-up" class="card text-center" style="background-color: transparent !important;">
+							<img class="card-img-top mx-auto img-fluid" style="max-width: 152px; max-height: 270px;" src="img/himitsulab_homepage_tokeneconomy_324x324.png" alt="Card image cap">
+							<div class="card-body">
+							<div class="text-nowrap" >Token Economy & Digital Wallet</div>
+							<div class="text-center pt-4"><a href="aboutus.html#overview" class="btn btn-outline-primary text-nowrap">+ ReadMore</a></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div data-aos="fade-up" class="card text-center" style="background-color: transparent !important;">
+							<img class="card-img-top mx-auto img-fluid" style="max-width: 152px; max-height: 270px;" src="img/himitsulab_homepage_facialrecog_324x324.png" alt="Card image cap">
+							<div class="card-body">
+							<div class="text-nowrap">Facial Recognition</div>
+							<div class="text-center pt-4"><a href="aboutus.html#overview" class="btn btn-outline-primary text-nowrap">+ ReadMore</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 h2 text-center">
+					<div class="font-weight-light pt-5">
+						Track & Trace
+					</div>
+				
+				</div>
+				<div class="row mb-5 pb-5">
+					<div class="col-md-4 pt-5">
+						<img class="img-fluid" src="img/himitsulab_homepage_track&trace_528x528.png">
+					</div>
+					<div class="col-md-8 pt-5 text-justify" style="font-size: 14px;">
+						We were an early adopter of blockchain’s distributed ledger technology by implementing ‘Trace and Track’, a provenance and traceability solution for supply chain management.
+						<br><br>
+						Our solution is suitable for all manufacturing organization. Key features are:<br>
+						<ul>
+							<li>
+								Supply-Chain Provenance and Traceability solution
+							</li>
+							<li>
+								End to end solution from raw material, manufacturing, logistics, distributor and end clients
+							</li>
+							<li>
+								Integrates with existing supply-chain, warehouse and logistics systems
+							</li>
+							<li>
+								Enables traceability and trace-forward of any product which has a unique identified (product or package)
+							</li>
+							<li>
+								Multi-product, multi-client, multi-locations ready
+							</li>
+							<li>
+								Leverage blockchain to ensure authenticity and eliminate fraud
+							</li>
+							<li>
+								Smart Contracts based business logic (planned release)
+							</li>
+							<li>
+								Secured and scalable architecture with business growth
+							</li>
+						</ul><br>
+						Our Trace and Track supply-chain traceability solution address Food &amp; Beverage, Automotive and Pharmaceutical industries to name a few, though the solution is applicable for any enterprise supply-chain requirements which needs traceability. The solution has been developed on Hyperledger platform with sidechains in Angular, Node.JS and React framework.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="jumbotron bg-primary">
+			<div class="row">
+				<div class="col-12 h2 text-center">
+					<div class="font-weight-light pt-5">
+						About Us
+					</div>
+				</div>
+				<div class="container pt-5">
+					<div class="row">
+						<div class="col-12">
+							Operating at the crossroads of AI, Blockchain, Internet of Things (IoT) and emerging ideas, we incubate innovation and nurture disruptive digital solutions.
+							<br><br>
+							We are a laboratory of ideas, where people have room to think, feel, fail, experiment, and to create breakthrough products and services that raise the bar and fuelled by technology and undying entrepreneurial passion.
+							<br><br>
+							Connected worlds offer new insights and opportunities for societies, people and organisations.
+							<br><br>
+							New products and services boost the democratization of technology and creation of globally connected - sustainable - communities.
+							<br><br>
+							Himitsu Lab teams come up with business ideas to experiment and trial. Such shortlisted projects get ideated and prototyped using our technology teams and piloted with potential customers to get market validation and feedback. Based on the outcome and business plan, the project gets funded and spun-off as a separate company.
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="pb-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 h2 text-center">
+					<div class=" font-weight-light pt-5">How we build future solutions?</div>
+				</div>
+			</div>
+		</div>
+		<div class="container pt-5">
+			<div class="row pt-3 justify-content-center">
+                <div class="col-sm-4 col-md" >
+                    <div class="card text-justify" >
+                            <img class="card-img-top mx-auto img-fluid" style="width: 150px" src="img/himitsulab_homepage_ideation_256x256.png" alt="Card image cap">
+                            <div class="card-body keyfeatures">
+								<div class="text-center">Ideation</div>
+							 </div>
+							 <div class="text-center pt-2"><a href="aboutus.html#overview" class="btn btn-primary text-nowrap">+ ReadMore</a></div>
+                    </div>
+				</div>
+				<span class="pt-5 img-fluid"><img src="img/arrow.png"></span>
+                <div class="col-sm-4 col-md" >
+                    <div class="card text-justify" >
+                            <img class="card-img-top mx-auto img-fluid" style="width: 150px" src="img/himitsulab_homepage_discovery_256x256.png" alt="Card image cap">
+                            <div class="card-body keyfeatures">
+                            	<div class="text-center">Discovery</div>
+							</div>
+							<div class="text-center pt-2"><a href="aboutus.html#overview" class="btn btn-primary text-nowrap">+ ReadMore</a></div>
+                    </div>
+				</div>
+				<span class="pt-5 img-fluid"><img src="img/arrow.png"></span>
+                <div class="col-sm-4 col-md" >
+                    <div class="card text-justify" >
+                            <img class="card-img-top mx-auto img-fluid" style="width: 150px" src="img/himitsulab_homepage_validation_256x256.png" alt="Card image cap">
+                            <div class="card-body keyfeatures">
+                           		 <div class="text-center">Validation</div>
+							</div>
+							<div class="text-center pt-2"><a href="aboutus.html#overview" class="btn btn-primary text-nowrap">+ ReadMore</a></div>
+                    </div>
+				</div>
+				<span class="pt-5 img-fluid"><img src="img/arrow.png"></span>
+                <div class="col-sm-4 col-md" >
+                    <div class="card text-justify" >
+                            <img class="card-img-top mx-auto img-fluid" style="width: 150px" src="img/himitsulab_homepage_creation_256x256.png" alt="Card image cap">
+                            <div class="card-body keyfeatures">
+                           		 <div class="text-center">Creation​</div>
+							</div>
+							<div class="text-center pt-2"><a href="aboutus.html#overview" class="btn btn-primary text-nowrap">+ ReadMore</a></div>
+                    </div>
+				</div>
+				<span class="pt-5 img-fluid"><img src="img/arrow.png"></span>
+                <div class="col-sm-4 col-md" >
+                    <div class="card text-justify" >
+                            <img class="card-img-top mx-auto img-fluid" style="width: 150px" src="img/himitsulab_homepage_scalable_256x256.png" alt="Card image cap">
+                            <div class="card-body keyfeatures">
+                           		 <div class="text-center">Scalable</div>
+							</div>
+							<div class="text-center pt-2"><a href="aboutus.html#overview" class="btn btn-primary text-nowrap">+ ReadMore</a></div>
+                    </div>
+                </div>
+        </div>
+		</div>
+	</section>	
+	<div class="container d-md-none">
+		<hr class="line">
+	</div>
+	
 </body>
 </html>
