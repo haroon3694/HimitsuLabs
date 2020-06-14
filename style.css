@@ -3,12 +3,19 @@
 html,body{
     font-family: 'Spartan', sans-serif;
     height: 100%;
-}
+    scroll-behavior: smooth;
+    animation: fadeInAnimation ease 3s ;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+
 
 .nav-item{
     font-size: 12px !important;
     font-weight: 600;
 }
+
+
 
 .herobg{
     background-image: url("img/heroimage.png");
@@ -21,6 +28,15 @@ html,body{
 
 .h2{
     font-weight: 600 !important;
+}
+
+
+.nav-item:hover:after {
+  content: ""; 
+  display: block;
+  margin: 0 auto;
+  width: 50%; 
+  border-bottom: 2px solid #0089F2; 
 }
 
 
@@ -37,6 +53,9 @@ html,body{
 
 .btn-warning{
     font-weight: 600 !important;
+    font-size: 14px !important;
+    border-radius: 10px !important;
+    padding: 15px 15px 10px 15px;
 }
 
 .bg-primary{
@@ -59,8 +78,8 @@ html,body{
 }
 
 .btn-outline-primary:hover{
-    background-color: #E0A800 !important;
-    border: 0.5px solid white;
+    background-color: #FFCC00 !important;
+    border: none !important;
     color: black !important;
     padding: 3% 7% 2% 7% !important;
     font-size: 14px !important;
@@ -71,7 +90,7 @@ html,body{
 .btn-primary{
     border: 0.5px solid black;
     color: black !important;
-    padding: 3% 7% 2% 7% !important;
+    padding: 12px 15px 8px 15px;
     font-size: 12px !important;
     text-transform: uppercase !important;
     border-radius: 10px !important;
@@ -83,14 +102,89 @@ html,body{
     background-color: #0069D9 !important;
     border: 0.5px solid white;
     color: white !important;
-    padding: 3% 7% 2% 7% !important;
+    padding: 12px 15px 8px 15px;
     font-size: 12px !important;
     text-transform: uppercase !important;
     border-radius: 10px !important;
   }
 
+  .btn-custom{
+      background-color: #0089F2 !important;
+      color: white !important;
+      width: 40% !important;
+      padding: 10px;
+      border-radius: 25px !important;
+      transition: all .35s;
+      font-size: 14px;
+  }
+
+ .btn-custom::after{
+  background: #ff003b;
+  transition: all .35s;
+ }
 
   hr.line {
     border-top: 1px dashed blue;
   }
+
+  .futurebody{
+font-size: 14px !important;
+  }
+
+
+
+  
+  @media only screen and (max-width: 798px){
+    .btn-custom{
+        background-color: #0089F2 !important;
+        color: white !important;
+        width: 100% !important;
+        padding: 10px;
+        border-radius: 25px !important;
+    }
+
+    .arrow{
+        transform: rotate(90deg);
+    }
+  }
+
+  @media only screen and (min-width: 798px){
+
+            /*keyframes*/
+        .navbar{
+          animation: navbar 2.5s;
+        }
+        .textoverlay{
+          animation: textoverlayanimation 2.5s;
+        }
+
+        @keyframes textoverlayanimation {
+            0%{
+              left: -200px;
+              opacity: 0;
+            }
+            100%{
+              left: 0px;
+              opacity: 1;
+            }
+        }
+
+
+          @keyframes navbar {
+              from {top: -100px;}
+              to {top: 0px;}
+            }
+
+
+          @keyframes fadeInAnimation { 
+              0% { 
+                  opacity: 0; 
+              } 
+              100% { 
+                  opacity: 1; 
+              } 
+            } 
+  }
+
+  
   
