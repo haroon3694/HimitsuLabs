@@ -7,7 +7,20 @@ html,body{
     animation: fadeInAnimation ease 3s ;
     animation-iteration-count: 1; 
     animation-fill-mode: forwards; 
-} 
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, #ed97a0, #cc299a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+#hero .text-white {
+  color: white !important;
+}
+
 
 #myBtn {
   display: none;
@@ -122,6 +135,15 @@ html,body{
     text-transform: uppercase !important;
     border-radius: 10px !important;
   }
+
+  .btn-custom-filled{
+    border: 1px solid white;
+    color: white !important;
+    padding: 18px 50px;
+    border-radius: 30px !important;
+    transition: all .35s;
+    font-size: 14px;
+}
 
   .btn-custom{
       background-color: #0089F2 !important;
